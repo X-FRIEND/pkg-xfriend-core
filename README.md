@@ -1,0 +1,1 @@
+# pkg-x-friend-core
