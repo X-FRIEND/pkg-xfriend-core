@@ -4,7 +4,7 @@ require("dotenv").config();
 
 const expect = require("chai").expect;
 const mocha = require("mocha");
-const utility = require("../helpers/utility");
+const utility = require("../lib/helpers/utility");
 
 mocha.describe("Utility Function tests", function () {
   mocha.it("Test Utility ParseInt", () => {

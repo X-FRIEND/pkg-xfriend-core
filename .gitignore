@@ -6,6 +6,8 @@ build/
 temp/
 coverage/
 dist/
+log
+temp
 
 uploads/*
 !uploads/.gitkeep

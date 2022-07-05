@@ -1,4 +1,4 @@
-const Errors = require("../../helpers/customError");
+const Errors = require("../../lib/helpers/customError");
 
 const getOriginalError = () => {
   const error = new Error("Original Axios error");
