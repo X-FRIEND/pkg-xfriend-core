@@ -65,25 +65,23 @@ mocha.describe("Healpers Function tests", () => {
       });
     });
     mocha.it("should have error success", async () => {
-      const customError = new helpers.customError.CustomError(errorMake);
       try {
-        const customError = new helpers.customError.CustomError(errorMake);
-        helpers.requestHandler.onError(customError);
+        const CustomError = new helpers.CustomError(errorMake);
+        helpers.requestHandler.onError(CustomError);
       } catch (err) {
-        expect(err).to.be.instanceof(helpers.customError.CustomError);
+        expect(err).to.be.instanceof(helpers.CustomError);
       }
     });
   });
 
-  mocha.describe("Test customError", () => {
+  mocha.describe("Test CustomError", () => {
     mocha.it("should call request with correct params", async () => {
-      const customError = new helpers.customError.CustomError(errorMake);
-      const toResponseData = customError.toResponseData();
-      expect(customError).to.be.instanceof(Error);
-      expect(customError).to.be.instanceof(helpers.customError.CustomError);
+      const CustomError = new helpers.CustomError(errorMake);
+      const toResponseData = CustomError.toResponseData();
+      expect(CustomError).to.be.instanceof(Error);
+      expect(CustomError).to.be.instanceof(helpers.CustomError);
       expect(toResponseData).to.be.deep.equal(resultMake);
-      expect(helpers.customError.CustomError.isCustomError(customError)).to.be
-        .true;
+      expect(helpers.CustomError.isCustomError(CustomError)).to.be.true;
     });
   });
 

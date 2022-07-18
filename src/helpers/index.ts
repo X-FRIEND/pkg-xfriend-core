@@ -1,4 +1,4 @@
-import customError from "./customError"
+import CustomError from "./CustomError"
 import customErrorConstants from "./customErrorConstants"
 import logger from "./logger"
 import { loggerHandler } from "./loggerHandler"
@@ -7,7 +7,7 @@ import requestHandler from "./requestHandler"
 import winstonLogConsole from "./winstonLogConsole"
 
 export const helpers = {
-  customError,
+  CustomError,
   customErrorConstants,
   logger,
   loggerHandler,

@@ -86,8 +86,4 @@ class CustomError extends Error implements ICustomError {
 }
 
 
-export default {
-  CustomError,
-  StatusCode: errorConstants.StatusCode,
-  ErrorType: errorConstants.ErrorType,
-};
+export default CustomError
